@@ -1,0 +1,64 @@
+pre .str, code .str { color: rgb(214, 157, 133); font-family: inherit; } /* string */
+pre .kwd, code .kwd { color: rgb(86, 156, 214); font-family: inherit; } /* keyword */
+pre .com, code .com { color: rgb(87, 166, 66); font-family: inherit; } /* comment */
+pre .typ, code .typ { color: rgb(86, 156, 214); font-family: inherit; } /* type */
+pre .lit, code .lit { color: rgb(181, 206, 168); font-family: inherit; } /* literal */
+pre .pun, code .pun { color: #fff; font-family: inherit; } /* punctuation - white */
+pre .pln, code .pln { color: #fff; font-family: inherit; } /* plaintext - white */
+pre .tag, code .tag { color: #89bdff; font-family: inherit; } /* html/xml tag    - light blue */
+pre .atn, code .atn { color: #bdb76b; font-family: inherit; } /* html/xml attribute name  - khaki */
+pre .atv, code .atv { color: #65B042; font-family: inherit; } /* html/xml attribute value - green */
+pre .dec, code .dec { color: rgb(181, 206, 168); font-family: inherit; } /* decimal */
+
+pre.prettyprint, code.prettyprint {
+    background-color: rgb(30, 30, 30);
+    border-radius: 0.5em;
+    font-family: 'Courier New', 'Consolas' !important;
+}
+
+pre.prettyprint {
+	width: 100%;
+    padding: 1em !important;
+    margin-top: 1em !important;
+    margin-bottom: 2em !important;
+    border: none !important;
+    white-space: pre-wrap;
+}
+
+pre.bash {
+    width: 100%;
+    border-radius: 0.5em;
+    color: white;
+    background-color: rgb(30, 30, 30);
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    border: none;
+    white-space: pre-wrap;
+    font-family: 'Courier New', 'Consolas';
+}
+
+.bash-user {
+    color: lime;
+    font-family: 'Courier New', 'Consolas';
+    
+}
+
+.bash-path {
+    color: blue;
+    font-family: 'Courier New', 'Consolas';
+    
+}
+
+.il {
+    top: -1px;
+    padding: 0.15em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    /* background-color: rgb(30, 30, 30);*/
+    border: 1px solid rgb(30, 30, 30);
+    
+    border-radius: 0.2em;
+    position: relative;
+    font-family: 'Courier New', 'Consolas';
+}

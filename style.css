@@ -1,0 +1,146 @@
+/*
+Theme Name: Alek's Tutorials
+Theme URI: https://wordpress.org/themes/twentytwenty/
+Author: Aleksander Mabry
+Author URI: https://alekstutorials.com/
+Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.3
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwenty
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/*
+@font-face {
+    font-family: "Raleway";
+    src: url(/assets/fonts/Raleway/Raleway-Light.ttf);
+}
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.background {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, rgba(41,171,226,1) 0%, rgba(33,177,75,1) 100%);
+    z-index: -5;
+}
+
+.footer-text {
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    width: 100%;
+    z-index: 5;
+    transform: translateZ(100px);
+}
+
+.blocks-gallery-grid {
+    padding-left: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.wp-block-image img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.wpforms-form label, .wpforms-form input, .wpforms-form textarea {
+    font-size: 1em !important;
+    font-weight: normal !important;
+}
+
+.wpforms-field-medium {
+    min-width: 100% !important;
+    max-width: 100% !important;
+}
+
+.search-form {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.search-field {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1em;
+    padding-right: 0;
+    font-size: 1em;
+    border-radius: 0.5em 0 0 0.5em;
+    -webkit-border-radius: 0.5em 0 0 0.5em;
+    -webkit-appearance: none;
+    border: none;
+}
+
+.search-submit {
+    flex: initial;
+    background-color: rgba(255, 255, 255, 0.9);;
+    background-image: url("./assets/images/ico-search-black.svg");
+    background-size: 1em;
+    width: 4em;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0 0.5em 0.5em 0;
+    border: none;
+    cursor: pointer;
+}
+
+.iframe-container {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 56.25%;
+    position: relative;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    margin-bottom: 0;
+}
+
+/* Desktop settings. */
+@media only screen and (min-width: 961px) {
+    * {
+        font-size: 18px;
+    }
+}
+
+/* Tablet settings. */
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+    * {
+        font-size: 16px;
+    }
+}
+
+/* Phone settings. */
+@media only screen and (max-width: 500px) {
+    * {
+        font-size: 14px;
+    }
+}

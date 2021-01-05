@@ -1,0 +1,223 @@
+
+
+
+/***** Navigation bar containers ******/
+
+.navigation-container {
+    background: black;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    flex: initial;
+}
+
+.navigation-bar {
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.navigation-brand {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+}
+
+.navigation-items {
+    display: flex;
+    align-items: stretch;
+}
+
+.custom-logo-link {
+    height: 100%;
+}
+
+.custom-logo {
+    padding: 0.5em;
+    height: 100%;
+    object-fit: contain;
+    width: auto;
+}
+
+
+/***** Responsiveness configuration. *****/
+
+/* Desktop. */
+@media only screen and (min-width: 961px) {
+
+    /* Navigation link desktop configuration. */
+    .expanded-navigation-links {
+        display: flex;
+        align-items: stretch;
+        list-style-type: none;
+    }
+
+    .expanded-navigation-links li {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+    }
+
+    .expanded-navigation-links a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding-left: 1em;
+        padding-right: 1em;
+        font-size: 1em;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Navigation link underline hover animation. */
+    @keyframes anim-navigation-link-underline-grow {
+        from {
+            width: 0%;
+            left: 50%;
+        }
+        to {
+            width: calc(100% + 2em);
+            left: -1em;
+        }
+    }
+
+    #navigation-link-underline {
+        background-color: white;
+        border: none;
+        width: calc(100% + 2em);
+        height: 0.2em;
+        position: relative;
+        margin-bottom: -0.2em;
+        left: -1em;
+        top: -0.2em;
+        animation-name: anim-navigation-link-underline-grow;
+        animation-duration: 0.15s;
+    }
+
+    /* Search bar. */
+    .navigation-search-container {
+        padding-right: 1em;
+        position: relative;
+    }
+
+    .navigation-search-button {
+        background: transparent;
+        cursor: pointer;
+        border: none;
+        height: 100%;
+        width: 100%;
+        padding-left: 1em;
+        padding-right: 1em;
+        text-align: center;
+    }
+
+    .navigation-search-bar {
+        background-color: black;
+        color: white;
+        border-top: 0.25em solid white;
+        position: absolute;
+        margin-top: -0.25em;
+        width: 25em;
+        right: 0;
+        padding: 0.5em;
+        display: none;
+    }
+
+    .navigation-search-container:hover .navigation-search-bar {
+        display: block;
+    }
+
+    /* Disable hamburger dropdown. */
+    .hamburger-button {
+        display: none;
+    }
+
+    .hamburger-navigation-links {
+        display: none;
+    }
+}
+
+/* Tablet & Phone. */
+@media only screen and (max-width: 960px) {
+
+    /* Set up hamburger dropdown. */
+    .hamburger-navigation-links {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        transition: max-height ease 0.15s;
+        max-height: 0;
+    }
+
+    .hamburger-navigation-links li {
+        display: flex;
+        justify-content: stretch;
+        align-items: stretch;
+    }
+
+    .hamburger-navigation-links a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1em;
+        padding-top: 0.75em;
+        padding-bottom: 0.75em;
+        text-align: center;
+        width: 100%;
+    }
+
+    .hamburger-navigation-links a:hover {
+        background-color: rgba(41,171,226,1);
+    }
+
+
+    @keyframes anim-hamburger-button-dropdown {
+        0% {
+            background-size: 40%;
+            background-image: url("../images/ico-hamburger.svg");
+        }
+        50% {
+            background-size: 0%;
+        }
+        100% {
+            background-size: 40%;
+            background-image: url("../images/ico-exit.svg");
+        }
+    }
+
+    .hamburger-button {
+        cursor: pointer;
+        border: none;
+        width: 5em;
+        background-color: transparent;
+        background-image: url("../images/ico-hamburger.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 40%;
+        z-index: 20;
+        animation-duration: 0.15s;
+        animation-direction: reverse;
+    }
+    
+    .hamburger-button-activated {
+        background-image: url("../images/ico-exit.svg");
+        animation: anim-hamburger-button-dropdown;
+        animation-duration: 0.15s;
+    }
+
+    /* Disable expanded navigation links. */
+    .expanded-navigation-links {
+        display: none;
+    }
+
+    /* Disable expanded navigation search bar. */
+    .navigation-search-container {
+        display: none;
+    }
+}
