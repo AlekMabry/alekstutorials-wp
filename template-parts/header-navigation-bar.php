@@ -22,7 +22,7 @@
                 );
             ?>
             <div class="navigation-search-container">
-                <button class="navigation-search-button"><img style="height: 1em; border: none;" src="<?php echo get_template_directory_uri(); ?>/assets/images/ico-search.svg"></button>
+                <button class="navigation-search-button"><img style="height: 1em; border: none;" alt="Search Icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/ico-search.svg"></button>
                 <div class="navigation-search-bar">
                     <?php get_search_form(); ?>
                 </div>
