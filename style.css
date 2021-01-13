@@ -17,14 +17,19 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
-    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6, .navigation-container {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
 }
 
 .background {
@@ -117,6 +122,15 @@ iframe {
     margin-bottom: 0;
 }
 
+
+.float-right-description {
+    padding-left: 2em;
+}
+
+.float-left-description {
+    padding-right: 2em;
+}
+
 /* Desktop settings. */
 @media only screen and (min-width: 961px) {
     * {
@@ -125,7 +139,6 @@ iframe {
 
     .staggered-container {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
@@ -139,9 +152,17 @@ iframe {
 
     .staggered-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: column !important;
         justify-content: flex-start;
         align-items: center;
+    }
+
+    .float-right-description {
+        padding-left: 0;
+    }
+
+    .float-left-description {
+        padding-right: 0;
     }
 }
 
@@ -153,8 +174,16 @@ iframe {
 
     .staggered-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: column !important;
         justify-content: flex-start;
         align-items: center;
+    }
+
+    .float-right-description {
+        padding-left: 0;
+    }
+
+    .float-left-description {
+        padding-right: 0;
     }
 }
