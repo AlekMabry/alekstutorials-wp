@@ -124,11 +124,14 @@ iframe {
 
 .float-right-description {
     padding-left: 2em;
-    text-align: left;
 }
 
 .float-left-description {
     padding-right: 2em;
+}
+
+.float-right-description *,
+.float-left-description * {
     text-align: left;
 }
 
@@ -160,11 +163,14 @@ iframe {
 
     .float-right-description {
         padding-left: 0;
-        text-align: center;
     }
 
     .float-left-description {
         padding-right: 0;
+    }
+
+    .float-right-description *,
+    .float-left-description * {
         text-align: center;
     }
 }
@@ -184,11 +190,14 @@ iframe {
 
     .float-right-description {
         padding-left: 0;
-        text-align: center;
     }
 
     .float-left-description {
         padding-right: 0;
+    }
+
+    .float-right-description *,
+    .float-left-description * {
         text-align: center;
     }
 }
