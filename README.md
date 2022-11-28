@@ -1,10 +1,7 @@
 # Alekstutorials.com Wordpress Theme
 This is a responsive theme I designed for my tutorial website.
 
-![Projects Page on Desktop](https://github.com/AlekMabry/alekstutorials-wp/screenshots/ProjectsPageFull.png)
-
-![Landing Page on Desktop](https://github.com/AlekMabry/alekstutorials-wp/screenshots/LandingPageFull.png)
-
-![Tutorials Page on Mobile](https://github.com/AlekMabry/alekstutorials-wp/screenshots/TutorialsPageMobile.png)
-
-![Tutorial Page on Mobile](https://github.com/AlekMabry/alekstutorials-wp/screenshots/TutorialPageMobile.png)
+<img src="screenshots/ProjectsPageFull.png" alt="Projects Page on Desktop"/>
+<img src="screenshots/LandingPageFull.png" alt="Landing Page on Desktop"/>
+<img src="screenshots/TutorialsPageMobile.png" alt="Tutorials Page on Mobile"/>
+<img src="screenshots/TutorialPageMobile.png" alt="Tutorial Page on Mobile"/>
